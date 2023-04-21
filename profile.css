@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.profile-box {
+	width: 320px;
+	height: 480px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+.profile-box input[type="text"], .profile-box input[type="date"] {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 16px;
+}
+
+.profile-box input[type="submit"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #4CAF50;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.profile-box input[type="submit"]:hover {
+	background: #fff;
+	color: #000;
+}
+
+.profile-box label {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+}
+
+.user-box {
+	position: relative;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -20px;
+	font-size: 12px;
+}

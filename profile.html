@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>File Upload</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>File Upload</h1>
+		<form action="#" method="post" enctype="multipart/form-data">
+			<label for="file-upload">Choose up to 20 files (max 10KB each):</label>
+			<input type="file" id="file-upload" name="file-upload[]" multiple accept=".xls, .xlsx, .csv, .xml" max-files="20" max-size="10000000">
+			<input type="submit" value="Upload">
+		</form>
+	</div>
+</body>
+</html>
