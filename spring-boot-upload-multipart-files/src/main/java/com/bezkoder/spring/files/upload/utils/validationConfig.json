@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "required": true,
+      "maxLength": 50,
+      "dataType": "string"
+    },
+    {
+      "name": "name",
+      "required": false,
+      "maxLength": 10,
+      "dataType": "integer"
+    },
+    {
+      "name": "email",
+      "required": false,
+      "dataType": "string",
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+    },
+    {
+      "name": "birthdate",
+      "required": false,
+      "dataType": "date",
+      "dateFormat": "yyyy-MM-dd"
+    }
+  ]
+}
