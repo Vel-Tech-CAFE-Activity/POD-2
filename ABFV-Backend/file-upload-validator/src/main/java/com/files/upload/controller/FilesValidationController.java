@@ -35,7 +35,6 @@ public class FilesValidationController {
         List<Map<String, Object>> dataList = getMaps(jsonString);
 
         GenericValidator genericValidator = new GenericValidator();
-
         String message = genericValidator.validate(dataList);
 
         if (message != null) {
@@ -53,6 +52,7 @@ public class FilesValidationController {
 		} catch (Exception e) {
 			message=e.getMessage();
 		}
+
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
 
     }
