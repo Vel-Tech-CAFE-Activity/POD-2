@@ -1,0 +1,30 @@
+{
+  "maxColumnCount": 50,
+  "maxFileSize": 10485760,
+  "fieldConfigs": [
+    {
+      "name": "name",
+      "required": true,
+      "maxLength": 100,
+      "dataType": "string"
+    },
+    {
+      "name": "email",
+      "required": false,
+      "dataType": "string",
+      "pattern": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$"
+    },
+    {
+      "name": "birthdate",
+      "required": false,
+      "dataType": "date",
+      "dateFormat": "dd-MM-yyyy"
+    },
+    {
+      "name": "phone",
+      "required": false,
+      "dataType": "string",
+      "unique": true
+    }
+  ]
+}
